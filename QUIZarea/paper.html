@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:blue;
+}
+
+li {
+  float: left;
+}
+
+ .right{
+  float: right;
+}
+body{
+ background-color:white;
+}
+right,li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+right,li a:hover {
+  background-color:;
+}
+.form{
+ background-color:white;
+ align:left;
+ width:50%;
+}
+.paper{
+ background-color:white;
+ align:right;
+ width:50%;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 90%;
+}
+input[type=text]{
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit],input[type=reset]{
+  width: 50%;
+  background-color: lightblue;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+</style>
+<script>
+  i=prompt("enter no of options for each que:");
+  content="";
+  con="";
+   function show(){
+    for (var j=1;j<=i;j++){
+      document.writeln("<label>Option "+j+"</label><br><input type="+"text><br><br>"); 
+     }
+}
+  </script>
+</head>
+<body>
+
+<ul>
+  <li class="right"><a href="teacher_login.html">Log out</a></li>
+</ul> 
+
+   
+       <form action="javascript:history.go(-1)"><label>Question</label><br><input type="text" name="que">
+<br><br>       <span id="options"><script>show();</script><br><br>
+       <label>Answer:</label><br><br>
+       <input type="text"><br>
+       <input type="reset" value="ADD"><br>
+       <input type="submit" value="SUBMIT QUESTION PAPER">     </form>  
+
+</table>
+</body>
+</html>

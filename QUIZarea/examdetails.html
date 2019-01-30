@@ -1,0 +1,81 @@
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: peachpuff;
+}
+
+li {
+  float: left;
+}
+
+ .right{
+  float: right;
+}
+
+right,li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+right,li a:hover {
+  background-color: ;
+}
+ input[type=text]{
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit]{
+  width: 50%;
+  background-color: lightblue;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+</style>
+<script>function validate(){
+   return true;
+}</script>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#about">About</a></li>
+  <li class="right"><a href="home.html">Log out</a></li>
+</ul>
+  
+  <form action="que_paper.html" method="get" name="form" onsubmit="return validate()"><fieldset>
+  <legend><h3>Fill out the following details</h3></legend>
+    <div class="container">
+
+    <label for="subject"><h3>Subject</h3></label>
+    <input type="text" placeholder="Enter Subject Name" name="subject" required>
+    <label for="noofque"><h3>No of questions</h3></label>
+    <input type="text" placeholder="Enter no of que(a number)" name="noofque" required>
+  
+   <label for="marks"><h3>Marks for each question</h3></label>
+    <input type="text" placeholder="Enter a number" name="marks" required>
+   <label for="time"><h3>Duration of exam</h3></label>
+   <input type="text" placeholder="Enter a number(in min)" name="time" required>
+  <br><br><input type="submit" onClick="que_paper.html" value="Next->">
+   </div>
+   </fieldset>
+  </form>

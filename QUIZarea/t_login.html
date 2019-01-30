@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: blue;
+}
+
+li {
+  float: left;
+}
+
+ .right{
+  float: right;
+}
+
+right,li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+right,li a:hover {
+  background-color:;
+}
+
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width:80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  position: center;
+  cursor: pointer;
+  width: 60%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  position: center;
+  background-color: #b22222;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+body{
+ text-align:center;
+}
+form{
+ display:inline-block;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="home.html">Home</a></li>
+  <li><a href="#about">About</a></li>
+  <li class="right"><a href="stud_login.html">Student Login</a></li>
+  <li class="right"><a href="t_login.html">Teacher Login</a></li>
+</ul>
+
+
+
+<h2>Teacher Login</h2>
+<div class="formstyle">
+<form action="afterT.html" class="form" method="post">
+  
+
+  <div class="container">
+    <table>
+      <tr>
+        <td><label for="uname"><b>TeacherId</b></label></td>
+        <td><input type="text" style="width: 250px" placeholder="Enter Id" name="uname" required></td>
+      </tr>
+      <tr>
+        <td> <label for="psw"><b>Password</b></label></td>
+        <td><input type="password" style="width: 250px" placeholder="Enter Password" name="psw" required></td>
+      </tr>
+        <td colspan="2"> <button type="submit">Login</button></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="checkbox" checked="checked" name="remember"> Remember password</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn" onClick="javascript:history.go(-1)">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form></div>
+</body>
+</html>
